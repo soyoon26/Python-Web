@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="chess.css">
+  <style>
+    .chessboard {
+        display: table;
+        width: 800px;
+        height: 800px;
+        border: 1px solid black;
+    }
+    .white_box {
+        width: 100px;
+        height: 100px;
+        background-color: white;
+        display: table-cell;
+    }
+    .black_box {
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        display: table-cell;
+    }
+    .parent {
+        position: absolute;
+    }
+    .son_king {
+        position: relative;
+        left: 200px;
+    }
+
+    .son_rook {
+        position: relative;
+        right : 200px
+    }
+    .son_pawn {
+        position: relative;
+        right : 1000px
+    }
+    .son_queen {
+        position: relative;
+        right : 300px;
+        bottom : 300px
+    }
+    
+  </style>
+</head>
+<div>
+      <div class="chessboard">
+        <div>
+            <span class="white_box"></span>
+            <span class="black_box"></span>
+            <span class="white_box"></span>
+            <span class="black_box"></span>
+            <span class="white_box"></span>
+            <span class="black_box"></span>
+            <span class="white_box"></span>
+            <span class="black_box"></span>
+        </div>
+        <div>
+            <span class="black_box"></span>
+            <span class="white_box"></span>
+            <span class="black_box"></span>
+            <span class="white_box"></span>
+            <span class="black_box"></span>
+            <span class="white_box"></span>
+            <span class="black_box"></span>
+            <span class="white_box"></span>
+        </div>
+
+        <div>
+            <span class="white_box"></span>
+            <span class="black_box"></span>
+            <span class="white_box"></span>
+            <span class="black_box"></span>
+            <span class="white_box"></span>
+            <span class="black_box"></span>
+            <span class="white_box"></span>
+            <span class="black_box"></span>
+        </div>
+        
+        <div>
+            <span class="black_box"></span>
+            <span class="white_box"></span>
+            <span class="black_box"></span>
+            <span class="white_box"></span>
+            <span class="black_box"></span>
+            <span class="white_box"></span>
+            <span class="black_box"></span>
+            <span class="white_box"></span>
+        </div>
+
+        <div>
+            <span class="white_box" class ="parent"><img class="son_pawn" src="black_pawn.png" width="100px" alt=""></span>
+            <span class="black_box"></span>
+            <span class="white_box"></span>
+            <span class="black_box"></span>
+            <span class="white_box"></span>
+            <span class="black_box"></span>
+            <span class="white_box"></span>
+            <span class="black_box"></span>
+        </div>
+
+        <div>
+            <span class="black_box"></span>
+            <span class="white_box"></span>
+            <span class="black_box"></span>
+            <span class="white_box"></span>
+            <span class="black_box"></span>
+            <span class="white_box"></span>
+            <span class="black_box"></span>
+            <span class="white_box"></span>
+        </div>
+        <div>
+            <span class="white_box"></span>
+            <span class="black_box"></span>
+            <span class="white_box"></span>
+            <span class="black_box"></span>
+            <span class="white_box"></span>
+            <span class="black_box"></span>
+            <span class="white_box"></span>
+            <span class="black_box"></span>
+        </div>
+        <div>
+            <span class="black_box"></span>
+            <span class="white_box"></span>
+            <span class="black_box"></span>
+            <span class="white_box" class = "parent"><img class = "son_queen"src="white_queen.png" width = "100"alt=""></span>
+            <span class="black_box" class = "parent"><img class = "son_king"src="white_king.png" width = "100" alt=""></span>
+            <span class="white_box"></span>
+            <span class="black_box"></span>
+            <span class="white_box" class = "parent"><img class = "son_rook" src="white_rook.png" width="100" alt=""></span>
+        </div>
+    </div>
+</body>
+</html>
